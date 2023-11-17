@@ -58,7 +58,7 @@ export default function Edit() {
       }else{
            
       try{
-        const {data} =await axios.post(`https://crud-users-gold.vercel.app/users/${id}`,user);
+        const {data} =await axios.put(`https://crud-users-gold.vercel.app/users/${id}`,user);
 
         console.log(data)
 
@@ -186,7 +186,7 @@ export default function Edit() {
    
 
   <div className="mb-3">
-    <input type='submit' className='form-control' value='Add User' />
+    <input type='submit' className='form-control' value='Update User' />
   </div>
  
 </form>

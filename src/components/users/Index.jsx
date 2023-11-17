@@ -153,7 +153,7 @@ if(loader){
             <td>{user.password}</td>
             <td className='btn btn-danger' onClick={()=>deleteUser(user._id)}> delete </td>
             <td className='btn btn-info'  ><Link to={`/user/${user._id}`}>details</Link> </td>
-            <td  className='btn btn-warning'  onClick={()=>deleteUser(user._id)}>
+            <td  className='btn btn-warning' >
               <Link to={`/user/edit/${user._id}`}> edit </Link>
                </td>
           </tr>
